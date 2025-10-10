@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Google won't index this page or follow links on this page -->
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://media.nakbuch.de/404"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- HTML Meta Tags -->
+    <title>NAKBuch Media</title>
+    <meta name="description" content="404">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://media.nakbuch.de/404">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="404">
+    <meta property="og:description" content="NAKBuch Media">
+    <meta property="og:image" content="https://www.media.nakbuch.de/media/error.gif">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="media.nakbuch.de">
+    <meta property="twitter:url" content="https://media.nakbuch.de/404">
+    <meta name="twitter:title" content="404">
+    <meta name="twitter:description" content="NAKBuch Media">
+    <meta name="twitter:image" content="https://www.media.nakbuch.de/media/error.gif">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Kumbh Sans', sans-serif;
+            color: white;
+            transition-property: all;
+            transition-duration: 0.6s;
+            transition-timing-function: ease;
+            background-color: #131313;
+        }
+
+        .error {
+            max-width: 1000px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .error h1 {
+            font-size: 4rem;
+            margin-top: 30px;
+            background-color: #77b6ff;
+            background-image: linear-gradient(to top, #085eff 0%, #99f6ff 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+        }
+
+        .error img {
+            width: 80vw;
+            height: 35vw;
+            max-width: 800px;
+            max-height: 350px;
+            object-fit: cover;
+            object-position: 0 35%;
+        }
+
+        .error button {
+            font-size: 1rem;
+            background: linear-gradient(to top, #085eff 0%, #99f6ff 100%);
+            padding: 14px 32px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            margin-right: 1rem;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.35s;
+            outline: none;
+        }
+
+        .error button a {
+            position: relative;
+            z-index: 2;
+            text-decoration: none;
+            background: transparent;
+            color: white;
+        }
+
+        .error button:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #2d81b6;
+            transition: all 0.35s;
+            border-radius: 4px;
+        }
+
+        .error button:hover {
+            transform: scale(1.075);
+            transition: 0.2s ease-in;
+            color: white;
+            cursor: pointer;
+        }
+
+        .error button:hover:after {
+            color: white;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="error">
+    <h1>404</h1>
+    <br>
+    <img src="/media/error.gif" alt="">
+    <br>
+    <p lang="de">Völlig verloren,</p>
+    <p lang="de">die Seite die du suchst, ist nicht verfügbar!</p>
+    <button><a href="/">Startseite</a></button>
+    <br><br><br><br>
+</div>
+</body>
+</html>
